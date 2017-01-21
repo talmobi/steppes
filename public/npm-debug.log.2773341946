@@ -1,0 +1,27 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'watch:js' ]
+2 info using npm@4.1.2
+3 info using node@v6.9.2
+4 verbose run-script [ 'prewatch:js', 'watch:js', 'postwatch:js' ]
+5 info lifecycle steppes@1.0.0~prewatch:js: steppes@1.0.0
+6 silly lifecycle steppes@1.0.0~prewatch:js: no script for prewatch:js, continuing
+7 info lifecycle steppes@1.0.0~watch:js: steppes@1.0.0
+8 verbose lifecycle steppes@1.0.0~watch:js: unsafe-perm in lifecycle true
+9 verbose lifecycle steppes@1.0.0~watch:js: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/mollie/code/steppes/node_modules/.bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/mollie/code/steppes/node_modules/.bin:/Users/mollie/Library/Android/sdk/platform-tools:/Users/mollie/Library/Android/sdk/tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mollie/Library/Android/sdk/platform-tools:/Users/mollie/Library/Android/sdk/tools:/Applications/Postgres.app/Contents/Versions/latest/bin:/Applications/Postgres.app/Contents/Versions/latest/bin
+10 verbose lifecycle steppes@1.0.0~watch:js: CWD: /Users/mollie/code/steppes
+11 silly lifecycle steppes@1.0.0~watch:js: Args: [ '-c', 'wrollup -c rollup.config.js' ]
+12 verbose stack Error: write EPIPE
+12 verbose stack     at exports._errnoException (util.js:1022:11)
+12 verbose stack     at WriteWrap.afterWrite (net.js:801:14)
+13 verbose cwd /Users/mollie/code/steppes/public
+14 error Darwin 14.5.0
+15 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "watch:js"
+16 error node v6.9.2
+17 error npm  v4.1.2
+18 error code EPIPE
+19 error errno EPIPE
+20 error syscall write
+21 error write EPIPE
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]

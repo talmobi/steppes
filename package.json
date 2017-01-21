@@ -1,0 +1,30 @@
+{
+  "name": "steppes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "rollup -c rollup.config.js",
+    "build:css": "stylus -u nib -r styles/index.styl -o public/bundle.css",
+    "build": "npm run build:js && npm run build:css",
+    "watch:js": "wrollup -c rollup.config.js",
+    "watch:css": "stylus -w -u nib -r styles/index.styl -o public/bundle.css",
+    "watch": "cd public && miru -w bundle.js -e 'npm run watch:js' -w bundle.css -e 'npm run watch:css'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "redom": "^1.11.1"
+  },
+  "devDependencies": {
+    "miru": "^0.7.8",
+    "nib": "^1.1.2",
+    "rollup": "^0.41.4",
+    "rollup-plugin-buble": "^0.15.0",
+    "rollup-plugin-commonjs": "^7.0.0",
+    "stylus": "^0.54.5",
+    "wrollup": "^0.1.21"
+  }
+}
